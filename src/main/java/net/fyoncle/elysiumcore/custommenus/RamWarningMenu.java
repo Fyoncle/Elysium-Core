@@ -1,5 +1,7 @@
 package net.fyoncle.elysiumcore.custommenus;
 
+import org.lwjgl.glfw.GLFW;
+
 import net.fyoncle.elysiumcore.ElysiumCoreConfig;
 import net.fyoncle.elysiumcore.customwidgets.HoverableTextButton;
 import net.fyoncle.elysiumcore.utility.constants.Constants;
@@ -17,7 +19,6 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Colors;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Util;
-import org.lwjgl.glfw.GLFW;
 
 public class RamWarningMenu extends Screen {
 
