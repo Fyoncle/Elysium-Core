@@ -7,8 +7,8 @@ public class Constants {
         public static final String MODRINTH_API_LINK = "https://api.modrinth.com/";
         public static final String ELYSIUM_DAYS_VERSIONS_PAGE_LINK = "https://modrinth.com/modpack/elysium-days/versions";
         public static final String DISCORD_LINK = "https://discord.gg/WFpDr7zY8Z";
-        public static final String WIKI_LINK = "https://fyoncle.gitbook.io/elysium-days-wiki";
-        public static final String RAM_GUIDE_LINK = "https://fyoncle.gitbook.io/elysium-days-wiki/guides/memory-allocation";
+        public static final String WIKI_LINK = "https://elysium-days-wiki.netlify.app/";
+        public static final String RAM_GUIDE_LINK = "https://elysium-days-wiki.netlify.app/guides/memoryallocation/";
     }
 
     public static class Core {
