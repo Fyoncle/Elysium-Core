@@ -3,6 +3,7 @@
   "removed": [
     "item:moonlight:placeable_item",
     "item:moonlight:spawn_box",
-    "item:ecologics:moss_layer"
+    "item:ecologics:moss_layer",
+    "fluid:streamsreflowing:stream"
   ]
 }
