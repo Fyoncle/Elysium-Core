@@ -12,16 +12,6 @@ public class Textures {
             "elysiumcore",
             "textures/logo/menu_logo.png");
 
-    // - Health Bar Textures -
-    public static Identifier UNFOCUSED_OFF_HEALTHBAR_TEXTURE = Identifier.of(
-            "elysiumcore", "neat_disabled_button_unfocused");
-    public static Identifier FOCUSED_OFF_HEALTHBAR_TEXTURE = Identifier.of(
-            "elysiumcore", "neat_disabled_button_focused");
-    public static Identifier UNFOCUSED_ON_HEALTHBAR_TEXTURE = Identifier.of(
-            "elysiumcore", "neat_enabled_button_unfocused");
-    public static Identifier FOCUSED_ON_HEALTHBAR_TEXTURE = Identifier.of(
-            "elysiumcore", "neat_enabled_button_focused");
-
     // - Discord Button Texture -
     public static Identifier DISCORD_BUTTON_UNFOCUSED_TEXTURE = Identifier.of(
             "elysiumcore", "discord_button_unfocused");
