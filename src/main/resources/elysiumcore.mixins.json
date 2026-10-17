@@ -12,7 +12,6 @@
     "CustomIconMixin",
     "CustomMenuLogo",
     "CustomWindowTitleMixin",
-    "EscapeMenuMixin",
     "MainMenuMixin",
     "MixinClientPackSource",
     "ResourcePackPin"
