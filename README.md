@@ -43,6 +43,7 @@ standalone use.
 - Fixes inconsistencies within [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp)
 - Fixes [Snow Pig](https://modrinth.com/mod/snowpig-fabric) compatibility with [Fresh Animations: Details](https://modrinth.com/resourcepack/fresh-animations-details)
 - Fixes [MC-220390](https://bugs.mojang.com/browse/MC/issues/MC-220390)
+- Renames one item from [Rustic Delight](https://modrinth.com/mod/rustic-delight)
 
 </details>
 <div align="center">
