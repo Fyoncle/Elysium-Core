@@ -1,0 +1,13 @@
+{
+    "replace": false,
+	"values": [
+		{
+			"id": "#vertigo:vertical_slabs",
+			"required": false
+		},
+		{
+			"id": "#vertigo:steps",
+			"required": false
+		}
+	]
+}
