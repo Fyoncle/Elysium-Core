@@ -15,7 +15,8 @@
     "MainMenuMixin",
     "MixinClientPackSource",
     "ResourcePackPin",
-    "SnowRealMagicSodiumCullMixin"
+    "SnowRealMagicSodiumCullMixin",
+    "BetterCombatSnowSwingThruMixin"
   ],
   "injectors": {
     "defaultRequire": 1

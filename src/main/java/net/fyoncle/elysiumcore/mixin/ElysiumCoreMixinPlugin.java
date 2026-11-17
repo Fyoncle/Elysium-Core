@@ -19,7 +19,8 @@ public final class ElysiumCoreMixinPlugin implements IMixinConfigPlugin {
 
     private static final Map<String, Supplier<Boolean>> CONDITIONS = ImmutableMap.of(
             "net.fyoncle.elysiumcore.mixin.SuperbSteedEntityAttributesMixin", () -> FabricLoader.getInstance().isModLoaded("superbsteeds"),
-            "net.fyoncle.elysiumcore.mixin.SnowRealMagicSodiumCullMixin", () -> FabricLoader.getInstance().isModLoaded("snowrealmagic") && FabricLoader.getInstance().isModLoaded("sodium")
+            "net.fyoncle.elysiumcore.mixin.SnowRealMagicSodiumCullMixin", () -> FabricLoader.getInstance().isModLoaded("snowrealmagic") && FabricLoader.getInstance().isModLoaded("sodium"),
+            "net.fyoncle.elysiumcore.mixin.BetterCombatSnowSwingThruMixin", () -> FabricLoader.getInstance().isModLoaded("snowrealmagic") && FabricLoader.getInstance().isModLoaded("bettercombat")
     );
 
     @Override

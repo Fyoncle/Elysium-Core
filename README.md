@@ -41,7 +41,7 @@ standalone use.
 - Fixes inconsistencies within [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp)
 - Fixes [Snow Pig](https://modrinth.com/mod/snowpig-fabric) compatibility with [Fresh Animations: Details](https://modrinth.com/resourcepack/fresh-animations-details)
 - Fixes [MC-220390](https://bugs.mojang.com/browse/MC/issues/MC-220390)
-- Fixes many issues with the [Snow! Real Magic!](https://modrinth.com/mod/snow-real-magic) mod
+- Fixes many issues with the [Snow! Real Magic!](https://modrinth.com/mod/snow-real-magic) mod, which are [#496](https://github.com/Snownee/SnowRealMagic/issues/496), [#441](https://github.com/Snownee/SnowRealMagic/issues/441) and [#505](https://github.com/ZsoltMolnarrr/BetterCombat/issues/505)
 - Adds 1 secret tip for the [Tips](https://modrinth.com/mod/tips) mod
 - Removes Iceologer from [Drodi's Illagers FA](https://modrinth.com/resourcepack/drodis-illagers-fresh-animation) to ensure compatibility with [Friends & Foes](https://modrinth.com/mod/friends-and-foes)
 - Renames one item from [Rustic Delight](https://modrinth.com/mod/rustic-delight)
