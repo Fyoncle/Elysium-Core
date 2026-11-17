@@ -37,7 +37,6 @@ standalone use.
 - Adds [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp) compat for [Grindy Elytras](https://modrinth.com/mod/grindy-elytras) fragment texture
 - Adds compatibility for [Vanilla Backport](https://modrinth.com/mod/vanillabackport)'s swimming horses feature with [Eternal Nether](https://modrinth.com/mod/eternal-nether) and Skeleton Horses
 - Adds 1 secret tip for the [Tips](https://modrinth.com/mod/tips) mod
-- Fixes [The Lost Castle](https://modrinth.com/mod/the-lost-castle) not granting the Eye Spy advancement
 - Fixes [Superb Steeds](https://modrinth.com/mod/superb-steeds)'s issue [#9](https://github.com/MoriyaShiine/superb-steeds/issues/9)
 - Fixes [Snow Pig](https://modrinth.com/mod/snowpig-fabric) compatibility with [Fresh Animations: Details](https://modrinth.com/resourcepack/fresh-animations-details)
 - Fixes [MC-220390](https://bugs.mojang.com/browse/MC/issues/MC-220390)
