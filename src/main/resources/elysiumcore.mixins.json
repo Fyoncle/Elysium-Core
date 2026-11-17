@@ -14,7 +14,8 @@
     "CustomWindowTitleMixin",
     "MainMenuMixin",
     "MixinClientPackSource",
-    "ResourcePackPin"
+    "ResourcePackPin",
+    "SnowRealMagicSodiumCullMixin"
   ],
   "injectors": {
     "defaultRequire": 1

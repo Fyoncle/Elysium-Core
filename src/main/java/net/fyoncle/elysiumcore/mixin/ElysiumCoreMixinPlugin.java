@@ -1,22 +1,25 @@
 package net.fyoncle.elysiumcore.mixin;
 
-import com.google.common.collect.ImmutableMap;
-import net.fabricmc.loader.api.FabricLoader;
-import org.objectweb.asm.tree.ClassNode;
-import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
-import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
-
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.function.Supplier;
+
+import org.objectweb.asm.tree.ClassNode;
+import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
+import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
+
+import com.google.common.collect.ImmutableMap;
+
+import net.fabricmc.loader.api.FabricLoader;
 
 public final class ElysiumCoreMixinPlugin implements IMixinConfigPlugin {
 
     private static final Supplier<Boolean> TRUE = () -> true;
 
     private static final Map<String, Supplier<Boolean>> CONDITIONS = ImmutableMap.of(
-            "net.fyoncle.elysiumcore.mixin.SuperbSteedEntityAttributesMixin", () -> FabricLoader.getInstance().isModLoaded("superbsteeds")
+            "net.fyoncle.elysiumcore.mixin.SuperbSteedEntityAttributesMixin", () -> FabricLoader.getInstance().isModLoaded("superbsteeds"),
+            "net.fyoncle.elysiumcore.mixin.SnowRealMagicSodiumCullMixin", () -> FabricLoader.getInstance().isModLoaded("snowrealmagic") && FabricLoader.getInstance().isModLoaded("sodium")
     );
 
     @Override

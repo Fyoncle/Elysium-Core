@@ -36,16 +36,16 @@ standalone use.
 - Adds 2 Loot Tables for [End Remastered](https://modrinth.com/mod/endrem) eyes for injection with [Datapatched](https://modrinth.com/mod/datapatched)
 - Adds [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp) compat for [Grindy Elytras](https://modrinth.com/mod/grindy-elytras) fragment texture
 - Adds compatibility for [Vanilla Backport](https://modrinth.com/mod/vanillabackport)'s swimming horses feature with [Eternal Nether](https://modrinth.com/mod/eternal-nether) and Skeleton Horses
-- Nerfs [Eternal Nether](https://modrinth.com/mod/eternal-nether)'s Wither Skeleton Horses to work better with [SuperbSteeds](https://modrinth.com/mod/superb-steeds)
 - Fixes [The Lost Castle](https://modrinth.com/mod/the-lost-castle) not granting the Eye Spy advancement
 - Fixes Superb Steeds's issue [#9](https://github.com/MoriyaShiine/superb-steeds/issues/9)
-- Adds 1 secret tip for the [Tips](https://modrinth.com/mod/tips) mod
-- Removes Iceologer from [Drodi's Illagers FA](https://modrinth.com/resourcepack/drodis-illagers-fresh-animation) to ensure compatibility with [Friends & Foes](https://modrinth.com/mod/friends-and-foes)
 - Fixes inconsistencies within [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp)
 - Fixes [Snow Pig](https://modrinth.com/mod/snowpig-fabric) compatibility with [Fresh Animations: Details](https://modrinth.com/resourcepack/fresh-animations-details)
 - Fixes [MC-220390](https://bugs.mojang.com/browse/MC/issues/MC-220390)
-- Fixes many issues with the tags of [Snow! Real Magic!](https://modrinth.com/mod/snow-real-magic)
+- Fixes many issues with the [Snow! Real Magic!](https://modrinth.com/mod/snow-real-magic) mod
+- Adds 1 secret tip for the [Tips](https://modrinth.com/mod/tips) mod
+- Removes Iceologer from [Drodi's Illagers FA](https://modrinth.com/resourcepack/drodis-illagers-fresh-animation) to ensure compatibility with [Friends & Foes](https://modrinth.com/mod/friends-and-foes)
 - Renames one item from [Rustic Delight](https://modrinth.com/mod/rustic-delight)
+- Nerfs [Eternal Nether](https://modrinth.com/mod/eternal-nether)'s Wither Skeleton Horses to work better with [SuperbSteeds](https://modrinth.com/mod/superb-steeds)
 
 </details>
 <div align="center">
