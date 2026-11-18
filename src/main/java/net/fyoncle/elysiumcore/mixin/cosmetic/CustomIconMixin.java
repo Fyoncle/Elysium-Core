@@ -23,21 +23,33 @@ public class CustomIconMixin {
     @Unique
     private static InputSupplier<InputStream> loadIcon(String path) {
         try (InputStream stream = CustomIconMixin.class.getClassLoader().getResourceAsStream(path)) {
-            if (stream == null) throw new RuntimeException("Icon not found: " + path);
+            if (stream == null)
+                return null;
+
             byte[] data = IOUtils.toByteArray(stream);
             return () -> new ByteArrayInputStream(data);
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            return null;
         }
     }
 
     @Inject(method = "getIcons", at = @At("HEAD"), cancellable = true)
-    private void getIcons(ResourcePack resourcePack, CallbackInfoReturnable<List<InputSupplier<InputStream>>> cir) {
-        cir.setReturnValue(List.of(loadIcon(Textures.APP_ICON)));
+    private void getIcons(ResourcePack resourcePack,
+            CallbackInfoReturnable<List<InputSupplier<InputStream>>> cir) {
+        InputSupplier<InputStream> icon = loadIcon(Textures.APP_ICON);
+
+        if (icon != null) {
+            cir.setReturnValue(List.of(icon));
+        }
     }
 
     @Inject(method = "getMacIcon", at = @At("HEAD"), cancellable = true)
-    private void getMacIcon(ResourcePack resourcePack, CallbackInfoReturnable<InputSupplier<InputStream>> cir) {
-        cir.setReturnValue(loadIcon(Textures.APP_ICON_MAC));
+    private void getMacIcon(ResourcePack resourcePack,
+            CallbackInfoReturnable<InputSupplier<InputStream>> cir) {
+        InputSupplier<InputStream> icon = loadIcon(Textures.APP_ICON_MAC);
+
+        if (icon != null) {
+            cir.setReturnValue(icon);
+        }
     }
 }

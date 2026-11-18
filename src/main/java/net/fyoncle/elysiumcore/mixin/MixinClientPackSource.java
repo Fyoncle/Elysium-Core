@@ -22,10 +22,7 @@ public class MixinClientPackSource {
         super();
     }
 
-    @Inject(
-            method = {"register"},
-            at = {@At("RETURN")}
-    )
+    @Inject(method = { "register" }, at = { @At("RETURN") })
     private void paxi_loadPaxiPacksClientFabric(Consumer<ResourcePackProfile> consumer, CallbackInfo callback) {
         if (this.thisIsClientPackProvider(this)) {
             if (this.elysiumCorePackProvider == null) {

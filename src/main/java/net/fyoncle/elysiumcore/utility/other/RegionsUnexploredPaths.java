@@ -11,11 +11,12 @@ import net.minecraft.util.Identifier;
 public final class RegionsUnexploredPaths {
 
     private static final String NAMESPACE = "regions_unexplored";
-    private static final String[] PATH_IDS = {"silt_dirt_path", "peat_dirt_path"};
+    private static final String[] PATH_IDS = { "silt_dirt_path", "peat_dirt_path" };
 
     private static volatile Block[] paths;
 
-    private RegionsUnexploredPaths() {}
+    private RegionsUnexploredPaths() {
+    }
 
     public static boolean isRuPath(Object obj) {
         if (!(obj instanceof Block block)) {

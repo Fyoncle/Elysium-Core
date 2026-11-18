@@ -22,7 +22,7 @@ public class SuperbSteedEntityAttributesMixin {
     @Definition(id = "horseAttributesComponent", local = @Local(type = HorseAttributesComponent.class))
     @Expression("horseAttributesComponent != null")
     @ModifyExpressionValue(method = "@MixinSquared:Handler", at = @At("MIXINEXTRAS:EXPRESSION"))
-    private boolean yourHandlerMethod(boolean original) {
+    private boolean elysiumcore$forceBaseStats(boolean original) {
         return true;
     }
 }

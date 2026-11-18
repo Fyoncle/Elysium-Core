@@ -41,7 +41,8 @@ public class RamWarningMenu extends Screen {
 
     @Override
     public boolean keyPressed(int keyCode, int scanCode, int modifiers) {
-        if (keyCode == GLFW.GLFW_KEY_ESCAPE) return true;
+        if (keyCode == GLFW.GLFW_KEY_ESCAPE)
+            return true;
         return super.keyPressed(keyCode, scanCode, modifiers);
     }
 
@@ -53,18 +54,17 @@ public class RamWarningMenu extends Screen {
                 MinecraftClient.getInstance().textRenderer,
                 Text.translatable("elysiumcore.ramwarningscreen.warning_line1", currentRam),
                 Text.translatable("elysiumcore.ramwarningscreen.warning_line2"),
-                Text.translatable("elysiumcore.ramwarningscreen.warning_line3")
-        ).drawCenterWithShadow(context, this.width / 2, this.height / 2 - 80, 20, Colors.RED);
+                Text.translatable("elysiumcore.ramwarningscreen.warning_line3"))
+                .drawCenterWithShadow(context, this.width / 2, this.height / 2 - 80, 20, Colors.RED);
     }
 
     private HoverableTextButton createButton(int y, String label,
-                                             Identifier unfocused, Identifier focused,
-                                             ButtonWidget.PressAction action) {
+            Identifier unfocused, Identifier focused,
+            ButtonWidget.PressAction action) {
         return new HoverableTextButton(
                 this.width / 2 - 100, y,
                 200, 20,
-                label, unfocused, focused, action
-        );
+                label, unfocused, focused, action);
     }
 
     private void addGuideButton() {
@@ -75,8 +75,7 @@ public class RamWarningMenu extends Screen {
                 button -> {
                     Util.getOperatingSystem().open(Constants.Links.RAM_GUIDE_LINK);
                     MinecraftClient.getInstance().scheduleStop();
-                }
-        ));
+                }));
     }
 
     private void addIgnoreButton() {
@@ -84,8 +83,7 @@ public class RamWarningMenu extends Screen {
                 this.height / 2 + 25,
                 Text.translatable("elysiumcore.ramwarningscreen.button_ignore").getString(),
                 Textures.IGNORE_BUTTON_UNFOCUSED, Textures.IGNORE_BUTTON_FOCUSED,
-                button -> this.close()
-        ));
+                button -> this.close()));
     }
 
     private void addDontWarnAgainButton() {
@@ -97,8 +95,7 @@ public class RamWarningMenu extends Screen {
                     ElysiumCoreConfig.config.disableRamWarningScreen = true;
                     ElysiumCoreConfig.config.save();
                     this.close();
-                }
-        ));
+                }));
     }
 
     private void addQuitGameButton() {
@@ -106,8 +103,7 @@ public class RamWarningMenu extends Screen {
                 this.height / 2 + 75,
                 Text.translatable("menu.quit").getString(),
                 Textures.DEFAULT_BUTTON_UNFOCUSED, Textures.DEFAULT_BUTTON_FOCUSED,
-                button -> MinecraftClient.getInstance().scheduleStop()
-        ));
+                button -> MinecraftClient.getInstance().scheduleStop()));
     }
 
     private void addLanguageButton() {
@@ -118,12 +114,8 @@ public class RamWarningMenu extends Screen {
                                 new LanguageOptionsScreen(
                                         this,
                                         MinecraftClient.getInstance().options,
-                                        MinecraftClient.getInstance().getLanguageManager()
-                                )
-                        ),
-                        true
-                )
-        );
+                                        MinecraftClient.getInstance().getLanguageManager())),
+                        true));
         languageButton.setPosition(this.width / 2 - 10, this.height / 2 + 100);
     }
 

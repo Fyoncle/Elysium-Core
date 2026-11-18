@@ -47,8 +47,7 @@ public final class ElysiumCorePackProvider implements ResourcePackProvider {
                     PACK_ID,
                     Text.literal("§fElysium §5Core"),
                     ResourcePackSource.BUILTIN,
-                    Optional.empty()
-            );
+                    Optional.empty());
 
             ResourcePackProfile.PackFactory packFactory = new ResourcePackProfile.PackFactory() {
                 @Override
@@ -58,8 +57,10 @@ public final class ElysiumCorePackProvider implements ResourcePackProvider {
                             ResourcePackActivationType.ALWAYS_ENABLED, false);
 
                     if (pack == null) {
-                        LOGGER.error("Failed to load built-in resource pack '{}': no valid namespaces found at path '{}'. " +
-                                "Check the pack exists and is bundled correctly.", PACK_ID, finalSubPath);
+                        LOGGER.error(
+                                "Failed to load built-in resource pack '{}': no valid namespaces found at path '{}'. " +
+                                        "Check the pack exists and is bundled correctly.",
+                                PACK_ID, finalSubPath);
                     }
 
                     return pack;
@@ -74,15 +75,13 @@ public final class ElysiumCorePackProvider implements ResourcePackProvider {
             ResourcePackPosition position = new ResourcePackPosition(
                     true,
                     ResourcePackProfile.InsertionPosition.TOP,
-                    true
-            );
+                    true);
 
             ResourcePackProfile pack = ResourcePackProfile.create(
                     info,
                     packFactory,
                     ResourceType.CLIENT_RESOURCES,
-                    position
-            );
+                    position);
 
             if (pack == null) {
                 LOGGER.error("Failed to create resource pack profile for '{}'", PACK_ID);

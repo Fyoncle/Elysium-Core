@@ -10,10 +10,7 @@ import net.minecraft.client.MinecraftClient;
 
 @Mixin(MinecraftClient.class)
 public class CustomWindowTitleMixin {
-    @Inject(
-            at = @At("RETURN"),
-            method = "getWindowTitle",
-            cancellable = true)
+    @Inject(at = @At("RETURN"), method = "getWindowTitle", cancellable = true)
     private void getWindowTitle(CallbackInfoReturnable<String> cir) {
         cir.setReturnValue(Constants.Core.ELYSIUM_DAYS_WINDOW_TITLE);
     }

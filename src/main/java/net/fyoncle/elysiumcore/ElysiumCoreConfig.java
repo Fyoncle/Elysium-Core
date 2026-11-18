@@ -6,7 +6,8 @@ import me.fzzyhmstrs.fzzy_config.config.Config;
 import net.minecraft.util.Identifier;
 
 public class ElysiumCoreConfig extends Config {
-    public static ElysiumCoreConfig config = ConfigApiJava.registerAndLoadConfig(ElysiumCoreConfig::new, RegisterType.CLIENT);
+    public static ElysiumCoreConfig config = ConfigApiJava.registerAndLoadConfig(ElysiumCoreConfig::new,
+            RegisterType.CLIENT);
     public boolean disableRamWarningScreen = false;
 
     public ElysiumCoreConfig() {

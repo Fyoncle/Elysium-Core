@@ -27,9 +27,10 @@ public abstract class ServerEntityManagerMixin<T extends EntityLike> {
 
     @Shadow
     protected abstract boolean addEntity(T entity, boolean existing);
-    
+
     @WrapMethod(method = "updateTrackingStatus(Lnet/minecraft/util/math/ChunkPos;Lnet/minecraft/world/entity/EntityTrackingStatus;)V")
-    private void elysiumcore$deferAddsDuringStatusUpdate(ChunkPos chunkPos, EntityTrackingStatus status, Operation<Void> original) {
+    private void elysiumcore$deferAddsDuringStatusUpdate(ChunkPos chunkPos, EntityTrackingStatus status,
+            Operation<Void> original) {
         this.elysiumcore$statusUpdateDepth++;
         try {
             original.call(chunkPos, status);
@@ -46,7 +47,8 @@ public abstract class ServerEntityManagerMixin<T extends EntityLike> {
     }
 
     @WrapMethod(method = "addEntity(Lnet/minecraft/world/entity/EntityLike;Z)Z")
-    private boolean elysiumcore$queueFreshAddsDuringStatusUpdate(T entity, boolean existing, Operation<Boolean> original) {
+    private boolean elysiumcore$queueFreshAddsDuringStatusUpdate(T entity, boolean existing,
+            Operation<Boolean> original) {
         if (this.elysiumcore$statusUpdateDepth > 0 && !existing) {
             this.elysiumcore$deferredAdds.add(entity);
             return true;

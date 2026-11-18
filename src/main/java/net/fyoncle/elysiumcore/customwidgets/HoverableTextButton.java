@@ -11,9 +11,9 @@ public class HoverableTextButton extends TexturedButtonWidget {
     private final String text;
 
     public HoverableTextButton(int x, int y, int width, int height,
-                               String text,
-                               Identifier textureUnfocused,
-                               Identifier textureFocused, PressAction pressAction) {
+            String text,
+            Identifier textureUnfocused,
+            Identifier textureFocused, PressAction pressAction) {
         super(x, y, width, height, new ButtonTextures(textureUnfocused, textureFocused), pressAction);
         this.text = text;
     }

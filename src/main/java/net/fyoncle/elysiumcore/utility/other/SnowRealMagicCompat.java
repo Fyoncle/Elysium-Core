@@ -23,11 +23,13 @@ public final class SnowRealMagicCompat {
         Class<?> variant = null;
         MethodHandle getRaw = null;
         try {
-            variant = Class.forName("snownee.snow.block.SnowVariant", false, SnowRealMagicCompat.class.getClassLoader());
+            variant = Class.forName("snownee.snow.block.SnowVariant", false,
+                    SnowRealMagicCompat.class.getClassLoader());
             Method method = variant.getMethod("srm$getRaw", BlockState.class, BlockView.class, BlockPos.class);
             getRaw = MethodHandles.publicLookup().unreflect(method);
         } catch (Throwable t) {
-            LOGGER.warn("Snow Real Magic SnowVariant#srm$getRaw not found; Better Combat swing-through fix disabled.", t);
+            LOGGER.warn("Snow Real Magic SnowVariant#srm$getRaw not found; Better Combat swing-through fix disabled.",
+                    t);
             variant = null;
             getRaw = null;
         }
@@ -35,7 +37,8 @@ public final class SnowRealMagicCompat {
         GET_RAW = getRaw;
     }
 
-    private SnowRealMagicCompat() {}
+    private SnowRealMagicCompat() {
+    }
 
     public static BlockState unwrapSnowlogged(BlockState state, BlockView world, BlockPos pos) {
         if (GET_RAW == null || !SNOW_VARIANT.isInstance(state.getBlock())) {
