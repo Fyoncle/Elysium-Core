@@ -1,4 +1,4 @@
-package net.fyoncle.elysiumcore.mixin;
+package net.fyoncle.elysiumcore.mixin.compatibility;
 
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
@@ -17,6 +17,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.BlockRenderView;
 
+// Fixing https://github.com/Snownee/SnowRealMagic/issues/496
 @Mixin(targets = "snownee.snow.client.FabricRendererRenderAPI", remap = false)
 public abstract class SnowRealMagicSodiumCullMixin {
 

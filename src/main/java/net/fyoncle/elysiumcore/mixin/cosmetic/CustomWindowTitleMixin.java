@@ -1,11 +1,12 @@
-package net.fyoncle.elysiumcore.mixin;
+package net.fyoncle.elysiumcore.mixin.cosmetic;
 
-import net.fyoncle.elysiumcore.utility.constants.Constants;
-import net.minecraft.client.MinecraftClient;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+
+import net.fyoncle.elysiumcore.utility.constants.Constants;
+import net.minecraft.client.MinecraftClient;
 
 @Mixin(MinecraftClient.class)
 public class CustomWindowTitleMixin {

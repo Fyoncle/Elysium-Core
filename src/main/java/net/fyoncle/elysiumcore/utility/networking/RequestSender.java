@@ -1,13 +1,13 @@
 package net.fyoncle.elysiumcore.utility.networking;
 
-import net.fyoncle.elysiumcore.ElysiumCore;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URI;
 import java.net.URISyntaxException;
+
+import net.fyoncle.elysiumcore.ElysiumCore;
 
 public class RequestSender {
     public String sendRequestTo(String urlString) {

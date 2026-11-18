@@ -7,6 +7,7 @@ import net.minecraft.block.Block;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 
+// Fixing an issue on SSPB where Silt and Peat dirt paths from Regions Unexplored doesn't get shadow when the config option "only_affect_path_blocks" is set to true.
 public final class RegionsUnexploredPaths {
 
     private static final String NAMESPACE = "regions_unexplored";

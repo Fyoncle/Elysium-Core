@@ -8,7 +8,6 @@ import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fyoncle.elysiumcore.custommenus.RamWarningMenu;
 import net.fyoncle.elysiumcore.utility.other.Ram;
-import net.fyoncle.elysiumcore.utility.other.VersionChecking;
 import net.minecraft.client.gui.screen.TitleScreen;
 import net.minecraft.text.Text;
 
@@ -17,14 +16,12 @@ public class ElysiumCore implements ClientModInitializer {
     public static final String MOD_ID = "elysiumcore";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-    private final VersionChecking versionChecking = new VersionChecking();
     private RamWarningMenu ramWarningMenu;
     private boolean hasShownRamWarning = false;
 
     @Override
     public void onInitializeClient() {
         ElysiumCoreConfig.init();
-        versionChecking.checkEDVersion();
         initEvents();
         initCustomScreens();
     }

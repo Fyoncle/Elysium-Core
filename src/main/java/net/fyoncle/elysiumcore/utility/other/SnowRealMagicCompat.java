@@ -11,6 +11,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
 
+// Fixing https://github.com/ZsoltMolnarrr/BetterCombat/issues/505
 public final class SnowRealMagicCompat {
 
     private static final Logger LOGGER = LoggerFactory.getLogger("ElysiumCore/SnowRealMagicCompat");

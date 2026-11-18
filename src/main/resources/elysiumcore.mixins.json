@@ -4,21 +4,21 @@
   "compatibilityLevel": "JAVA_21",
   "plugin": "net.fyoncle.elysiumcore.mixin.ElysiumCoreMixinPlugin",
   "mixins": [
-    "PlayerEntityMixin",
-    "SuperbSteedEntityAttributesMixin",
-    "WitherSkeletonHorseModifier",
-    "ServerEntityManagerMixin"
+    "compatibility.PlayerEntityMixin",
+    "compatibility.SuperbSteedEntityAttributesMixin",
+    "compatibility.WitherSkeletonHorseModifierMixin",
+    "compatibility.ServerEntityManagerMixin"
   ],
   "client": [
-    "CustomIconMixin",
-    "CustomMenuLogo",
-    "CustomWindowTitleMixin",
-    "MainMenuMixin",
     "MixinClientPackSource",
     "ResourcePackPin",
-    "SnowRealMagicSodiumCullMixin",
-    "BetterCombatSnowSwingThruMixin",
-    "SspbRegionsUnexploredPathMixin"
+    "compatibility.SnowRealMagicSodiumCullMixin",
+    "compatibility.BetterCombatSnowSwingThruMixin",
+    "compatibility.SspbRegionsUnexploredPathMixin",
+    "cosmetic.CustomIconMixin",
+    "cosmetic.CustomMainMenuLogoMixin",
+    "cosmetic.CustomWindowTitleMixin",
+    "cosmetic.CustomMainMenuMixin"
   ],
   "injectors": {
     "defaultRequire": 1

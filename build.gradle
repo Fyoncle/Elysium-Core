@@ -30,10 +30,6 @@ dependencies {
     // Fzzy Config
     modImplementation "me.fzzyhmstrs:fzzy_config:${project.fzzyConfigVersion}"
 
-    // Neat
-    modImplementation "maven.modrinth:neat:${project.neatVersion}"
-    modImplementation "maven.modrinth:cloth-config:${project.clothConfigVersion}"
-
     // Eternal Nether
     modImplementation "maven.modrinth:eternal-nether:${project.eternalNetherVersion}"
     modImplementation "maven.modrinth:puzzles-lib:${project.puzzlesLibVersion}"

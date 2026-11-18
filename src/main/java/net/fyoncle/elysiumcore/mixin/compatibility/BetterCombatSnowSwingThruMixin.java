@@ -1,4 +1,4 @@
-package net.fyoncle.elysiumcore.mixin;
+package net.fyoncle.elysiumcore.mixin.compatibility;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -13,6 +13,7 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.util.math.BlockPos;
 
+// Fixing https://github.com/ZsoltMolnarrr/BetterCombat/issues/505
 @Mixin(value = MinecraftClient.class, priority = 1500)
 public abstract class BetterCombatSnowSwingThruMixin {
 

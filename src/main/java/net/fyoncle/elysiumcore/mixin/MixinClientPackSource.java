@@ -1,16 +1,17 @@
 package net.fyoncle.elysiumcore.mixin;
 
-import net.fyoncle.elysiumcore.resource.ElysiumCorePackProvider;
-import net.minecraft.client.resource.DefaultClientResourcePackProvider;
-import net.minecraft.resource.ResourcePackProfile;
-import net.minecraft.resource.VanillaResourcePackProvider;
+import java.util.function.Consumer;
+
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import java.util.function.Consumer;
+import net.fyoncle.elysiumcore.resource.ElysiumCorePackProvider;
+import net.minecraft.client.resource.DefaultClientResourcePackProvider;
+import net.minecraft.resource.ResourcePackProfile;
+import net.minecraft.resource.VanillaResourcePackProvider;
 
 @Mixin(value = VanillaResourcePackProvider.class, priority = 1100)
 public class MixinClientPackSource {

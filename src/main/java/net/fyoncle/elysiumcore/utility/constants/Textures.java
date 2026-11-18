@@ -12,19 +12,19 @@ public class Textures {
             "elysiumcore",
             "textures/logo/menu_logo.png");
 
-    // - Discord Button Texture -
+    // Discord Button Textures
     public static Identifier DISCORD_BUTTON_UNFOCUSED_TEXTURE = Identifier.of(
             "elysiumcore", "discord_button_unfocused");
     public static Identifier DISCORD_BUTTON_FOCUSED_TEXTURE = Identifier.of(
             "elysiumcore", "discord_button_focused");
 
-    // - Wiki Button Texture -
+    // Wiki Button Textures
     public static Identifier WIKI_BUTTON_UNFOCUSED_TEXTURE = Identifier.of(
             "elysiumcore", "wiki_button_unfocused");
     public static Identifier WIKI_BUTTON_FOCUSED_TEXTURE = Identifier.of(
             "elysiumcore", "wiki_button_focused");
 
-    // - Ram Warning Screen Textures -
+    // Ram Warning Screen Textures
     public static Identifier OPEN_GUIDE_BUTTON_UNFOCUSED = Identifier.of(
             "elysiumcore", "open_guide_button_unfocused");
     public static Identifier OPEN_GUIDE_BUTTON_FOCUSED = Identifier.of(
@@ -38,13 +38,9 @@ public class Textures {
     public static Identifier DONT_WARN_AGAIN_BUTTON_FOCUSED = Identifier.of(
             "elysiumcore", "dont_warn_again_button_focused");
 
-    // - Other -
+    // Default Button Textures
     public static Identifier DEFAULT_BUTTON_UNFOCUSED = Identifier.of(
             "elysiumcore", "default_button_unfocused");
     public static Identifier DEFAULT_BUTTON_FOCUSED = Identifier.of(
             "elysiumcore", "default_button_focused");
-    public static Identifier GREEN_BUTTON_UNFOCUSED_TEXTURE = Identifier.of(
-            "elysiumcore", "green_button_unfocused");
-    public static Identifier GREEN_BUTTON_FOCUSED_TEXTURE = Identifier.of(
-            "elysiumcore", "green_button_focused");
 }

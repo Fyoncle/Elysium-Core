@@ -9,9 +9,9 @@ Incompatibilities won't be fixed unless they affect the Elysium Days modpack, as
 standalone use.
 
 <a href="https://discord.gg/WFpDr7zY8Z" rel="noopener nofollow ugc">
-<img src="https://wsrv.nl/?url=https://i.ibb.co/V9DmRdC/discordicon.png" alt="Discord Icon"></a>
-<a href="https://github.com/Fyoncle/Elysium-Core" rel="noopener nofollow ugc">
-<img src="https://wsrv.nl/?url=https://i.ibb.co/N9s5hz1/github.png" alt="GitHub"></a>
+<img src="https://github.com/Fyoncle/Elysium-Days/blob/main/discord.png?raw=true" alt="Discord Icon"></a>
+<a href="https://github.com/Fyoncle/Elysium-Core/issues" rel="noopener nofollow ugc">
+<img src="https://github.com/Fyoncle/Elysium-Days/blob/main/github.png?raw=true" alt="GitHub"></a>
 
 ***
 </div>
@@ -23,9 +23,7 @@ standalone use.
 - Adds the Elysium Days logo on the main menu and the app icon
 - Adds a Discord Button on the main menu
 - Adds a Wiki Button on the main menu
-- Adds a Modpack Update Notifier on the main menu
 - Adds a RAM Warning Screen
-- Adds a toggle for the [Neat](https://modrinth.com/mod/neat) Mod
 - Adds a new panorama
 - Adds prettier banners for [Modern World Creation](https://modrinth.com/mod/modern-world-creation)
 - Adds new map icon sprites!
@@ -55,13 +53,9 @@ standalone use.
 
 ### Special Thanks
 
-<div align="center">
-  <a href="https://modrinth.com/user/shizotoaster" rel="noopener nofollow ugc">
-    <img src="https://wsrv.nl/?url=https://i.ibb.co/fdYNX3K/Heart.png" alt="Heart">
-  </a>
+<img src="https://github.com/Fyoncle/Elysium-Days/blob/main/heart.png?raw=true" alt="Heart">
 
-Special thanks to [VipCoder](https://github.com/VipCoder8), [Lancet-crow](https://github.com/Lancet-crow) and [Shizotoaster](https://github.com/shizotoaster) for
-their contributions while making this mod, without them it wouldn't be possible.
+Special thanks to [VipCoder](https://github.com/VipCoder8), [Lancet-crow](https://github.com/Lancet-crow) and [Shizotoaster](https://github.com/shizotoaster) for their contributions while making this mod, without them it wouldn't be possible.
 
 And many thanks to [Vixel](https://modrinth.com/user/Vixel) for letting me use his pixel arts in this mod!
 

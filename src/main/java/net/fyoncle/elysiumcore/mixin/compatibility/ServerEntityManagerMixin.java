@@ -1,4 +1,4 @@
-package net.fyoncle.elysiumcore.mixin;
+package net.fyoncle.elysiumcore.mixin.compatibility;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +15,7 @@ import net.minecraft.util.math.ChunkPos;
 import net.minecraft.world.entity.EntityLike;
 import net.minecraft.world.entity.EntityTrackingStatus;
 
+// Fixing https://github.com/mrsterner/GuardVillagers/issues/171
 @Mixin(ServerEntityManager.class)
 public abstract class ServerEntityManagerMixin<T extends EntityLike> {
 

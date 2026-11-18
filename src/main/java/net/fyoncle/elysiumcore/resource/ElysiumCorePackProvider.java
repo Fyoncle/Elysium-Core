@@ -1,21 +1,28 @@
 package net.fyoncle.elysiumcore.resource;
 
-import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
-import net.fabricmc.fabric.impl.resource.loader.ModNioResourcePack;
-import net.fabricmc.loader.api.FabricLoader;
-import net.minecraft.resource.*;
-import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import static java.util.Objects.requireNonNull;
+import static net.fyoncle.elysiumcore.ElysiumCore.MOD_ID;
 
 import java.nio.file.Path;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.Consumer;
 
-import static java.util.Objects.requireNonNull;
-import static net.fyoncle.elysiumcore.ElysiumCore.MOD_ID;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
+import net.fabricmc.fabric.impl.resource.loader.ModNioResourcePack;
+import net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.resource.ResourcePack;
+import net.minecraft.resource.ResourcePackInfo;
+import net.minecraft.resource.ResourcePackPosition;
+import net.minecraft.resource.ResourcePackProfile;
+import net.minecraft.resource.ResourcePackProvider;
+import net.minecraft.resource.ResourcePackSource;
+import net.minecraft.resource.ResourceType;
+import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
 
 public final class ElysiumCorePackProvider implements ResourcePackProvider {
     public static final String PACK_ID = "elysiumcore:elysiumcore";

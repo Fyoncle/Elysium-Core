@@ -1,9 +1,10 @@
-package net.fyoncle.elysiumcore.mixin;
+package net.fyoncle.elysiumcore.mixin.cosmetic;
 
-import net.fyoncle.elysiumcore.utility.constants.Textures;
-import net.minecraft.client.util.Icons;
-import net.minecraft.resource.InputSupplier;
-import net.minecraft.resource.ResourcePack;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.List;
+
 import org.apache.commons.io.IOUtils;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
@@ -11,10 +12,10 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.List;
+import net.fyoncle.elysiumcore.utility.constants.Textures;
+import net.minecraft.client.util.Icons;
+import net.minecraft.resource.InputSupplier;
+import net.minecraft.resource.ResourcePack;
 
 @Mixin(Icons.class)
 public class CustomIconMixin {
