@@ -42,6 +42,7 @@ standalone use.
 - Fixes [MC-220390](https://bugs.mojang.com/browse/MC/issues/MC-220390)
 - Fixes many issues with the [Snow! Real Magic!](https://modrinth.com/mod/snow-real-magic) mod, which are [#496](https://github.com/Snownee/SnowRealMagic/issues/496), [#441](https://github.com/Snownee/SnowRealMagic/issues/441) and [#505](https://github.com/ZsoltMolnarrr/BetterCombat/issues/505)
 - Fixes inconsistencies within [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp)
+- Fixes [Sodium Shadowy Path Blocks (SSPB)](https://modrinth.com/mod/sodium-shadowy-path-blocks) not working with [Regions Unexplored](https://modrinth.com/mod/regions-unexplored)'s path blocks
 - Removes Iceologer from [Drodi's Illagers FA](https://modrinth.com/resourcepack/drodis-illagers-fresh-animation) to ensure compatibility with [Friends & Foes](https://modrinth.com/mod/friends-and-foes)
 - Renames one item from [Rustic Delight](https://modrinth.com/mod/rustic-delight)
 - Nerfs [Eternal Nether](https://modrinth.com/mod/eternal-nether)'s Wither Skeleton Horses to work better with [SuperbSteeds](https://modrinth.com/mod/superb-steeds)

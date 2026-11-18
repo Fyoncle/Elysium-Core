@@ -16,7 +16,8 @@
     "MixinClientPackSource",
     "ResourcePackPin",
     "SnowRealMagicSodiumCullMixin",
-    "BetterCombatSnowSwingThruMixin"
+    "BetterCombatSnowSwingThruMixin",
+    "SspbRegionsUnexploredPathMixin"
   ],
   "injectors": {
     "defaultRequire": 1
