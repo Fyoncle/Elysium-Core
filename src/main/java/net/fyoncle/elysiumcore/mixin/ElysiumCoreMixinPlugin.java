@@ -21,7 +21,8 @@ public final class ElysiumCoreMixinPlugin implements IMixinConfigPlugin {
             "net.fyoncle.elysiumcore.mixin.SuperbSteedEntityAttributesMixin", () -> FabricLoader.getInstance().isModLoaded("superbsteeds"),
             "net.fyoncle.elysiumcore.mixin.SnowRealMagicSodiumCullMixin", () -> FabricLoader.getInstance().isModLoaded("snowrealmagic") && FabricLoader.getInstance().isModLoaded("sodium"),
             "net.fyoncle.elysiumcore.mixin.BetterCombatSnowSwingThruMixin", () -> FabricLoader.getInstance().isModLoaded("snowrealmagic") && FabricLoader.getInstance().isModLoaded("bettercombat"),
-            "net.fyoncle.elysiumcore.mixin.SspbRegionsUnexploredPathMixin", () -> FabricLoader.getInstance().isModLoaded("sspb") && FabricLoader.getInstance().isModLoaded("sodium") && FabricLoader.getInstance().isModLoaded("regions_unexplored")
+            "net.fyoncle.elysiumcore.mixin.SspbRegionsUnexploredPathMixin", () -> FabricLoader.getInstance().isModLoaded("sspb") && FabricLoader.getInstance().isModLoaded("sodium") && FabricLoader.getInstance().isModLoaded("regions_unexplored"),
+            "net.fyoncle.elysiumcore.mixin.ServerEntityManagerMixin", () -> FabricLoader.getInstance().isModLoaded("guardvillagers")
     );
 
     @Override

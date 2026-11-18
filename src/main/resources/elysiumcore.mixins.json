@@ -6,7 +6,8 @@
   "mixins": [
     "PlayerEntityMixin",
     "SuperbSteedEntityAttributesMixin",
-    "WitherSkeletonHorseModifier"
+    "WitherSkeletonHorseModifier",
+    "ServerEntityManagerMixin"
   ],
   "client": [
     "CustomIconMixin",
