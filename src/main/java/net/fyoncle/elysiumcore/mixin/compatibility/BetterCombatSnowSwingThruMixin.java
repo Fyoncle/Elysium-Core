@@ -13,7 +13,6 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.util.math.BlockPos;
 
-// Fixing https://github.com/ZsoltMolnarrr/BetterCombat/issues/505
 @Mixin(value = MinecraftClient.class, priority = 1500)
 public abstract class BetterCombatSnowSwingThruMixin {
 
@@ -22,7 +21,8 @@ public abstract class BetterCombatSnowSwingThruMixin {
             Operation<BlockState> original) {
         BlockState state = original.call(world, pos);
 
-        if (state.contains(SnowBlock.LAYERS) && state.get(SnowBlock.LAYERS) >= 8) {
+        if (SnowRealMagicCompat.getLayers(state, world, pos) >= 8
+                || (state.contains(SnowBlock.LAYERS) && state.get(SnowBlock.LAYERS) >= 6)) {
             return state;
         }
         return SnowRealMagicCompat.unwrapSnowlogged(state, world, pos);
