@@ -20,7 +20,7 @@ public class CustomMainMenuLogoMixin {
         private static final int ELYSIUMCORE$MAX_RAISE = 25;
 
         @WrapOperation(method = "draw(Lnet/minecraft/client/gui/DrawContext;IFI)V", at = @At(value = "INVOKE", ordinal = 0, target = "Lnet/minecraft/client/gui/DrawContext;drawTexture(Lnet/minecraft/util/Identifier;IIFFIIII)V"))
-        public void elysiumCore$drawCustomLogo(DrawContext instance, Identifier resourceLocation,
+        public void elysiumcore$drawCustomLogo(DrawContext instance, Identifier resourceLocation,
                         int i, int j, float f,
                         float g, int k,
                         int l, int m, int n, Operation<Void> original) {
@@ -33,7 +33,7 @@ public class CustomMainMenuLogoMixin {
         }
 
         @WrapOperation(method = "draw(Lnet/minecraft/client/gui/DrawContext;IFI)V", at = @At(value = "INVOKE", ordinal = 1, target = "Lnet/minecraft/client/gui/DrawContext;drawTexture(Lnet/minecraft/util/Identifier;IIFFIIII)V"))
-        public void elysiumCore$eraseEditionLogo(DrawContext instance, Identifier resourceLocation,
+        public void elysiumcore$eraseEditionLogo(DrawContext instance, Identifier resourceLocation,
                         int i, int j, float f,
                         float g, int k,
                         int l, int m, int n, Operation<Void> original) {

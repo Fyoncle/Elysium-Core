@@ -15,7 +15,7 @@ public class ElysiumCore implements ClientModInitializer {
     public static final String MOD_ID = "elysiumcore";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-    private static final float MIN_RECOMMENDED_RAM = 4.5f;
+    private static final float MIN_RECOMMENDED_RAM = 5.0f;
 
     private boolean ramWarningShown = false;
 

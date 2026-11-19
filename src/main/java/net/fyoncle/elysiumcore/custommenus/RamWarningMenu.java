@@ -33,7 +33,6 @@ public class RamWarningMenu extends Screen {
     @Override
     protected void init() {
         super.init();
-        // Built once per init (also runs on resize), not every frame.
         this.warningText = MultilineText.create(
                 this.textRenderer,
                 Text.translatable("elysiumcore.ramwarningscreen.warning_line1", currentRam),

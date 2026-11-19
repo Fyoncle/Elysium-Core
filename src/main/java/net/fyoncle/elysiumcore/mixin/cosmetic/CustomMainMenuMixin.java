@@ -39,13 +39,13 @@ public class CustomMainMenuMixin extends Screen {
 
         if (options != null) {
             int x = options.getX() - 2 * (ELYSIUMCORE$ICON_GAP + ELYSIUMCORE$ICON_SIZE);
-            this.elysiumCore$addLinkButton(x, options.getY(),
+            this.elysiumcore$addLinkButton(x, options.getY(),
                     Textures.WIKI_BUTTON_UNFOCUSED_TEXTURE, Textures.WIKI_BUTTON_FOCUSED_TEXTURE,
                     Constants.Links.WIKI_LINK, "elysiumcore.tooltip.wiki");
         }
         if (quit != null) {
             int x = quit.getX() + quit.getWidth() + 2 * ELYSIUMCORE$ICON_GAP + ELYSIUMCORE$ICON_SIZE;
-            this.elysiumCore$addLinkButton(x, quit.getY(),
+            this.elysiumcore$addLinkButton(x, quit.getY(),
                     Textures.DISCORD_BUTTON_UNFOCUSED_TEXTURE, Textures.DISCORD_BUTTON_FOCUSED_TEXTURE,
                     Constants.Links.DISCORD_LINK, "elysiumcore.tooltip.discord");
         }
@@ -64,7 +64,7 @@ public class CustomMainMenuMixin extends Screen {
     }
 
     @Unique
-    private void elysiumCore$addLinkButton(int x, int y, Identifier unfocused, Identifier focused,
+    private void elysiumcore$addLinkButton(int x, int y, Identifier unfocused, Identifier focused,
             String url, String labelKey) {
         Text label = Text.translatable(labelKey);
         TexturedButtonWidget button = new TexturedButtonWidget(
