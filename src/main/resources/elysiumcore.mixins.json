@@ -7,14 +7,15 @@
     "compatibility.PlayerEntityMixin",
     "compatibility.SuperbSteedEntityAttributesMixin",
     "compatibility.WitherSkeletonHorseModifierMixin",
-    "compatibility.ServerEntityManagerMixin"
+    "compatibility.GuardVillagersEntityLoadSpawnMixin"
   ],
   "client": [
     "MixinClientPackSource",
     "ResourcePackPin",
     "compatibility.SnowRealMagicSodiumCullMixin",
     "compatibility.BetterCombatSnowSwingThruMixin",
-    "compatibility.SspbRegionsUnexploredPathMixin",
+    "compatibility.SnowRealMagicDenseFlowersMixin",
+    "compatibility.DenseFlowersOffsetGeneratorMixin",
     "cosmetic.CustomIconMixin",
     "cosmetic.CustomMainMenuLogoMixin",
     "cosmetic.CustomWindowTitleMixin",

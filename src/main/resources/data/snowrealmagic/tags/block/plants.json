@@ -14,18 +14,6 @@
 		{
 			"id": "#c:bushes",
 			"required": false
-		},
-		{
-			"id": "#regions_unexplored:salmonberry",
-			"required": false
-		},
-		{
-			"id": "#regions_unexplored:shrubs",
-			"required": false
-		},
-		{
-			"id": "#regions_unexplored:grass",
-			"required": false
 		}
 	]
 }

@@ -34,6 +34,9 @@ standalone use.
 - Adds 2 Loot Tables for [End Remastered](https://modrinth.com/mod/endrem) eyes for injection with [Datapatched](https://modrinth.com/mod/datapatched)
 - Adds [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp) compat for [Grindy Elytras](https://modrinth.com/mod/grindy-elytras) fragment texture
 - Adds compatibility for [Vanilla Backport](https://modrinth.com/mod/vanillabackport)'s swimming horses feature with [Eternal Nether](https://modrinth.com/mod/eternal-nether) and Skeleton Horses
+- Adds compatibility between [Rustic Delight](https://modrinth.com/mod/rustic-delight) and [More Delight](https://modrinth.com/mod/more-delight)
+- Adds compatibility between [Sortilege](https://modrinth.com/mod/sortilege) and [Deeper and Darker](https://modrinth.com/mod/deeperdarker)
+- Adds compatibility between [Snow! Real Magic!](https://modrinth.com/mod/snow-real-magic) and [Dense Flowers](https://modrinth.com/mod/dense-flowers)
 - Adds 1 secret tip for the [Tips](https://modrinth.com/mod/tips) mod
 - Fixes [Superb Steeds](https://modrinth.com/mod/superb-steeds)'s issue [#9](https://github.com/MoriyaShiine/superb-steeds/issues/9)
 - Fixes [Guard Villagers](https://modrinth.com/mod/guard-villagers-fabricquilt) issue [#171](https://github.com/mrsterner/GuardVillagers/issues/171)
@@ -43,7 +46,6 @@ standalone use.
 - Fixes inconsistencies within [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp)
 - Fixes [Sodium Shadowy Path Blocks (SSPB)](https://modrinth.com/mod/sodium-shadowy-path-blocks) not working with [Regions Unexplored](https://modrinth.com/mod/regions-unexplored)'s path blocks
 - Removes Iceologer from [Drodi's Illagers FA](https://modrinth.com/resourcepack/drodis-illagers-fresh-animation) to ensure compatibility with [Friends & Foes](https://modrinth.com/mod/friends-and-foes)
-- Renames one item from [Rustic Delight](https://modrinth.com/mod/rustic-delight)
 - Nerfs [Eternal Nether](https://modrinth.com/mod/eternal-nether)'s Wither Skeleton Horses to work better with [SuperbSteeds](https://modrinth.com/mod/superb-steeds)
 
 </details>

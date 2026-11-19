@@ -17,8 +17,9 @@ public final class ElysiumCoreMixinPlugin implements IMixinConfigPlugin {
             "compatibility.SuperbSteedEntityAttributesMixin", List.of("superbsteeds"),
             "compatibility.SnowRealMagicSodiumCullMixin", List.of("snowrealmagic", "sodium"),
             "compatibility.BetterCombatSnowSwingThruMixin", List.of("snowrealmagic", "bettercombat"),
-            "compatibility.SspbRegionsUnexploredPathMixin", List.of("sspb", "sodium", "regions_unexplored"),
-            "compatibility.ServerEntityManagerMixin", List.of("guardvillagers"));
+            "compatibility.GuardVillagersEntityLoadSpawnMixin", List.of("guardvillagers"),
+            "compatibility.DenseFlowersOffsetGeneratorMixin", List.of("dense-flowers"),
+            "compatibility.SnowRealMagicDenseFlowersMixin.java", List.of("dense-flowers"));
 
     private String mixinPackagePrefix = "";
 
