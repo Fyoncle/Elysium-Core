@@ -23,6 +23,7 @@ import net.minecraft.util.Util;
 public class RamWarningMenu extends Screen {
 
     private final String currentRam;
+    private MultilineText warningText;
 
     public RamWarningMenu(Text title, String currentRam) {
         super(title);
@@ -32,6 +33,13 @@ public class RamWarningMenu extends Screen {
     @Override
     protected void init() {
         super.init();
+        // Built once per init (also runs on resize), not every frame.
+        this.warningText = MultilineText.create(
+                this.textRenderer,
+                Text.translatable("elysiumcore.ramwarningscreen.warning_line1", currentRam),
+                Text.translatable("elysiumcore.ramwarningscreen.warning_line2"),
+                Text.translatable("elysiumcore.ramwarningscreen.warning_line3"));
+
         addGuideButton();
         addIgnoreButton();
         addDontWarnAgainButton();
@@ -41,8 +49,9 @@ public class RamWarningMenu extends Screen {
 
     @Override
     public boolean keyPressed(int keyCode, int scanCode, int modifiers) {
-        if (keyCode == GLFW.GLFW_KEY_ESCAPE)
+        if (keyCode == GLFW.GLFW_KEY_ESCAPE) {
             return true;
+        }
         return super.keyPressed(keyCode, scanCode, modifiers);
     }
 
@@ -50,15 +59,10 @@ public class RamWarningMenu extends Screen {
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
         renderBackground(context, mouseX, mouseY, delta);
         super.render(context, mouseX, mouseY, delta);
-        MultilineText.create(
-                MinecraftClient.getInstance().textRenderer,
-                Text.translatable("elysiumcore.ramwarningscreen.warning_line1", currentRam),
-                Text.translatable("elysiumcore.ramwarningscreen.warning_line2"),
-                Text.translatable("elysiumcore.ramwarningscreen.warning_line3"))
-                .drawCenterWithShadow(context, this.width / 2, this.height / 2 - 80, 20, Colors.RED);
+        this.warningText.drawCenterWithShadow(context, this.width / 2, this.height / 2 - 80, 20, Colors.RED);
     }
 
-    private HoverableTextButton createButton(int y, String label,
+    private HoverableTextButton createButton(int y, Text label,
             Identifier unfocused, Identifier focused,
             ButtonWidget.PressAction action) {
         return new HoverableTextButton(
@@ -70,7 +74,7 @@ public class RamWarningMenu extends Screen {
     private void addGuideButton() {
         this.addDrawableChild(createButton(
                 this.height / 2 - 20,
-                Text.translatable("elysiumcore.ramwarningscreen.button_open_guide").getString(),
+                Text.translatable("elysiumcore.ramwarningscreen.button_open_guide"),
                 Textures.OPEN_GUIDE_BUTTON_UNFOCUSED, Textures.OPEN_GUIDE_BUTTON_FOCUSED,
                 button -> {
                     Util.getOperatingSystem().open(Constants.Links.RAM_GUIDE_LINK);
@@ -81,7 +85,7 @@ public class RamWarningMenu extends Screen {
     private void addIgnoreButton() {
         this.addDrawableChild(createButton(
                 this.height / 2 + 25,
-                Text.translatable("elysiumcore.ramwarningscreen.button_ignore").getString(),
+                Text.translatable("elysiumcore.ramwarningscreen.button_ignore"),
                 Textures.IGNORE_BUTTON_UNFOCUSED, Textures.IGNORE_BUTTON_FOCUSED,
                 button -> this.close()));
     }
@@ -89,7 +93,7 @@ public class RamWarningMenu extends Screen {
     private void addDontWarnAgainButton() {
         this.addDrawableChild(createButton(
                 this.height / 2 + 50,
-                Text.translatable("elysiumcore.ramwarningscreen.button_dont_warn_again").getString(),
+                Text.translatable("elysiumcore.ramwarningscreen.button_dont_warn_again"),
                 Textures.DONT_WARN_AGAIN_BUTTON_UNFOCUSED, Textures.DONT_WARN_AGAIN_BUTTON_FOCUSED,
                 button -> {
                     ElysiumCoreConfig.config.disableRamWarningScreen = true;
@@ -101,13 +105,13 @@ public class RamWarningMenu extends Screen {
     private void addQuitGameButton() {
         this.addDrawableChild(createButton(
                 this.height / 2 + 75,
-                Text.translatable("menu.quit").getString(),
+                Text.translatable("menu.quit"),
                 Textures.DEFAULT_BUTTON_UNFOCUSED, Textures.DEFAULT_BUTTON_FOCUSED,
                 button -> MinecraftClient.getInstance().scheduleStop()));
     }
 
     private void addLanguageButton() {
-        TextIconButtonWidget languageButton = (TextIconButtonWidget) this.addDrawableChild(
+        TextIconButtonWidget languageButton = this.addDrawableChild(
                 AccessibilityOnboardingButtons.createLanguageButton(
                         20,
                         button -> MinecraftClient.getInstance().setScreen(

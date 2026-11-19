@@ -19,6 +19,8 @@ public final class SnowRealMagicCompat {
     private static final Class<?> SNOW_VARIANT;
     private static final MethodHandle GET_RAW;
 
+    private static volatile boolean invokeFailureLogged = false;
+
     static {
         Class<?> variant = null;
         MethodHandle getRaw = null;
@@ -27,9 +29,9 @@ public final class SnowRealMagicCompat {
                     SnowRealMagicCompat.class.getClassLoader());
             Method method = variant.getMethod("srm$getRaw", BlockState.class, BlockView.class, BlockPos.class);
             getRaw = MethodHandles.publicLookup().unreflect(method);
-        } catch (Throwable t) {
+        } catch (ReflectiveOperationException | LinkageError e) {
             LOGGER.warn("Snow Real Magic SnowVariant#srm$getRaw not found; Better Combat swing-through fix disabled.",
-                    t);
+                    e);
             variant = null;
             getRaw = null;
         }
@@ -48,6 +50,13 @@ public final class SnowRealMagicCompat {
             BlockState raw = (BlockState) GET_RAW.invoke(state.getBlock(), state, world, pos);
             return raw == null || raw.isAir() ? state : raw;
         } catch (Throwable t) {
+            if (t instanceof Error error && !(t instanceof LinkageError)) {
+                throw error;
+            }
+            if (!invokeFailureLogged) {
+                invokeFailureLogged = true;
+                LOGGER.warn("SnowVariant#srm$getRaw threw; falling back to the original block state.", t);
+            }
             return state;
         }
     }

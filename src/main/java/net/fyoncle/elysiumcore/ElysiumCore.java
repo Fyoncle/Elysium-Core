@@ -4,7 +4,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fyoncle.elysiumcore.custommenus.RamWarningMenu;
 import net.fyoncle.elysiumcore.utility.other.Ram;
@@ -16,33 +15,29 @@ public class ElysiumCore implements ClientModInitializer {
     public static final String MOD_ID = "elysiumcore";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-    private RamWarningMenu ramWarningMenu;
-    private boolean hasShownRamWarning = false;
+    private static final float MIN_RECOMMENDED_RAM = 4.5f;
+
+    private boolean ramWarningShown = false;
 
     @Override
     public void onInitializeClient() {
         ElysiumCoreConfig.init();
-        initEvents();
-        initCustomScreens();
+        registerRamWarning();
     }
 
-    private void initEvents() {
-        ClientLifecycleEvents.CLIENT_STARTED.register(client -> {
-            if (!ElysiumCoreConfig.config.disableRamWarningScreen) {
-                if (Ram.getAllocatedRam() < 4.5) {
-                    ClientTickEvents.END_CLIENT_TICK.register(tickClient -> {
-                        if (!hasShownRamWarning && tickClient.currentScreen instanceof TitleScreen) {
-                            tickClient.setScreen(ramWarningMenu);
-                            hasShownRamWarning = true;
-                        }
-                    });
-                }
+    private void registerRamWarning() {
+        float allocatedRam = Ram.getAllocatedRam();
+        if (ElysiumCoreConfig.config.disableRamWarningScreen || allocatedRam >= MIN_RECOMMENDED_RAM) {
+            return;
+        }
+
+        String formattedRam = String.format("%.1f", allocatedRam);
+
+        ClientTickEvents.END_CLIENT_TICK.register(client -> {
+            if (!ramWarningShown && client.currentScreen instanceof TitleScreen) {
+                ramWarningShown = true;
+                client.setScreen(new RamWarningMenu(Text.empty(), formattedRam));
             }
         });
-    }
-
-    private void initCustomScreens() {
-        ramWarningMenu = new RamWarningMenu(Text.empty(),
-                String.valueOf(Ram.getAllocatedRam()).substring(0, 3));
     }
 }
