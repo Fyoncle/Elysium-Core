@@ -26,7 +26,6 @@ standalone use.
 - Adds a RAM Warning Screen
 - Adds a new panorama
 - Adds prettier banners for [Modern World Creation](https://modrinth.com/mod/modern-world-creation)
-- Adds new map icon sprites!
 
 ### Compatibility & Fixes
 
