@@ -35,13 +35,12 @@ standalone use.
 - Adds compatibility for [Vanilla Backport](https://modrinth.com/mod/vanillabackport)'s swimming horses feature with Skeleton Horses and [Eternal Nether](https://modrinth.com/mod/eternal-nether)
 - Adds compatibility between [Rustic Delight](https://modrinth.com/mod/rustic-delight) and [More Delight](https://modrinth.com/mod/more-delight)
 - Adds compatibility between [Sortilege](https://modrinth.com/mod/sortilege) and [Deeper and Darker](https://modrinth.com/mod/deeperdarker)
-- Adds compatibility between [Snow! Real Magic!](https://modrinth.com/mod/snow-real-magic) and [Dense Flowers](https://modrinth.com/mod/dense-flowers)
 - Adds 1 secret tip for the [Tips](https://modrinth.com/mod/tips) mod
 - Fixes [Superb Steeds](https://modrinth.com/mod/superb-steeds)'s issue [#9](https://github.com/MoriyaShiine/superb-steeds/issues/9)
 - Fixes [Snow! Real Magic!](https://modrinth.com/mod/snow-real-magic)'s issues with some of the tags
 - Fixes [Snow Pig](https://modrinth.com/mod/snowpig-fabric) compatibility with [Fresh Animations: Details](https://modrinth.com/resourcepack/fresh-animations-details)
+- Fixes [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp)'s inconsistencies with textures
 - Fixes [MC-220390](https://bugs.mojang.com/browse/MC/issues/MC-220390)
-- Fixes inconsistencies within [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp)
 - Nerfs [Eternal Nether](https://modrinth.com/mod/eternal-nether)'s Wither Skeleton Horses to work better with [SuperbSteeds](https://modrinth.com/mod/superb-steeds)
 
 </details>

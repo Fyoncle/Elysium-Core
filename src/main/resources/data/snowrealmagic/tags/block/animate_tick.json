@@ -1,0 +1,21 @@
+{
+	"values": [
+		"minecraft:wither_rose",
+		{
+			"id": "minecraft:open_eyeblossom",
+			"required": false
+		},
+		{
+			"id": "minecraft:short_dry_grass",
+			"required": false
+		},
+		{
+			"id": "minecraft:tall_dry_grass",
+			"required": false
+		},
+		{
+			"id": "minecraft:firefly_bush",
+			"required": false
+		}
+	]
+}
