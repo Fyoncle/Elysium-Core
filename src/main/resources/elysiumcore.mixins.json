@@ -4,7 +4,6 @@
   "compatibilityLevel": "JAVA_21",
   "plugin": "net.fyoncle.elysiumcore.mixin.ElysiumCoreMixinPlugin",
   "mixins": [
-    "compatibility.PlayerEntityMixin",
     "compatibility.SuperbSteedEntityAttributesMixin",
     "compatibility.WitherSkeletonHorseModifierMixin"
   ],
