@@ -11,9 +11,6 @@
   "client": [
     "MixinClientPackSource",
     "ResourcePackPin",
-    "compatibility.BetterCombatSnowSwingThruMixin",
-    "compatibility.SnowRealMagicDenseFlowersMixin",
-    "compatibility.DenseFlowersOffsetGeneratorMixin",
     "cosmetic.CustomIconMixin",
     "cosmetic.CustomMainMenuLogoMixin",
     "cosmetic.CustomWindowTitleMixin",

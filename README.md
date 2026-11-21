@@ -38,7 +38,7 @@ standalone use.
 - Adds compatibility between [Snow! Real Magic!](https://modrinth.com/mod/snow-real-magic) and [Dense Flowers](https://modrinth.com/mod/dense-flowers)
 - Adds 1 secret tip for the [Tips](https://modrinth.com/mod/tips) mod
 - Fixes [Superb Steeds](https://modrinth.com/mod/superb-steeds)'s issue [#9](https://github.com/MoriyaShiine/superb-steeds/issues/9)
-- Fixes [Snow! Real Magic!](https://modrinth.com/mod/snow-real-magic)'s issue [#441](https://github.com/Snownee/SnowRealMagic/issues/441)
+- Fixes [Snow! Real Magic!](https://modrinth.com/mod/snow-real-magic)'s issues with some of the tags
 - Fixes [Snow Pig](https://modrinth.com/mod/snowpig-fabric) compatibility with [Fresh Animations: Details](https://modrinth.com/resourcepack/fresh-animations-details)
 - Fixes [MC-220390](https://bugs.mojang.com/browse/MC/issues/MC-220390)
 - Fixes inconsistencies within [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp)

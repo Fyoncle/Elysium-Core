@@ -1,5 +1,7 @@
 package net.fyoncle.elysiumcore.custommenus;
 
+import java.util.Locale;
+
 import org.lwjgl.glfw.GLFW;
 
 import net.fyoncle.elysiumcore.ElysiumCoreConfig;
@@ -22,8 +24,20 @@ import net.minecraft.util.Util;
 
 public class RamWarningMenu extends Screen {
 
+    private static final float RAM_DIVISOR = 1000 * 1024.0f * 1024;
+
     private final String currentRam;
     private MultilineText warningText;
+
+    /** Max heap allocated to the JVM (same value the old Ram class returned). */
+    public static float getAllocatedRam() {
+        return Runtime.getRuntime().maxMemory() / RAM_DIVISOR;
+    }
+
+    /** Uses the current allocated RAM automatically. */
+    public RamWarningMenu(Text title) {
+        this(title, String.format(Locale.ROOT, "%.1f", getAllocatedRam()));
+    }
 
     public RamWarningMenu(Text title, String currentRam) {
         super(title);
