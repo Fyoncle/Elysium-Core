@@ -6,13 +6,11 @@
   "mixins": [
     "compatibility.PlayerEntityMixin",
     "compatibility.SuperbSteedEntityAttributesMixin",
-    "compatibility.WitherSkeletonHorseModifierMixin",
-    "compatibility.GuardVillagersEntityLoadSpawnMixin"
+    "compatibility.WitherSkeletonHorseModifierMixin"
   ],
   "client": [
     "MixinClientPackSource",
     "ResourcePackPin",
-    "compatibility.SnowRealMagicSodiumCullMixin",
     "compatibility.BetterCombatSnowSwingThruMixin",
     "compatibility.SnowRealMagicDenseFlowersMixin",
     "compatibility.DenseFlowersOffsetGeneratorMixin",

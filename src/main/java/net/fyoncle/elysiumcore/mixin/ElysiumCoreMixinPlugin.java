@@ -15,9 +15,7 @@ public final class ElysiumCoreMixinPlugin implements IMixinConfigPlugin {
     private static final Map<String, List<String>> REQUIRED_MODS = Map.of(
             "compatibility.WitherSkeletonHorseModifierMixin", List.of("eternalnether"),
             "compatibility.SuperbSteedEntityAttributesMixin", List.of("superbsteeds"),
-            "compatibility.SnowRealMagicSodiumCullMixin", List.of("snowrealmagic", "sodium"),
             "compatibility.BetterCombatSnowSwingThruMixin", List.of("snowrealmagic", "bettercombat"),
-            "compatibility.GuardVillagersEntityLoadSpawnMixin", List.of("guardvillagers"),
             "compatibility.DenseFlowersOffsetGeneratorMixin", List.of("dense-flowers"),
             "compatibility.SnowRealMagicDenseFlowersMixin.java", List.of("dense-flowers"));
 
