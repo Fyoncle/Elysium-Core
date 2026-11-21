@@ -22,6 +22,9 @@
   "icon": "assets/elysiumcore/icon.png",
   "environment": "*",
   "entrypoints": {
+    "main": [
+      "net.fyoncle.elysiumcore.PortalWarn"
+    ],
     "client": [
       "net.fyoncle.elysiumcore.ElysiumCore"
     ]

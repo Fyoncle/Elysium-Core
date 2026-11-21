@@ -32,6 +32,7 @@ standalone use.
 - Adds custom Eye of Ender warning translations for [End Remastered](https://modrinth.com/mod/endrem) mod to ensure compatibility with [The Lost Castle](https://modrinth.com/mod/the-lost-castle)
 - Adds 2 Loot Tables for [End Remastered](https://modrinth.com/mod/endrem) eyes for injection with [Datapatched](https://modrinth.com/mod/datapatched)
 - Adds [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp) compat for [Grindy Elytras](https://modrinth.com/mod/grindy-elytras) fragment texture
+- Adds a warning message for [Dimensional Tears](https://modrinth.com/mod/dimensional-tears)
 - Adds compatibility for [Vanilla Backport](https://modrinth.com/mod/vanillabackport)'s swimming horses feature with Skeleton Horses and [Eternal Nether](https://modrinth.com/mod/eternal-nether)
 - Adds compatibility between [Rustic Delight](https://modrinth.com/mod/rustic-delight) and [More Delight](https://modrinth.com/mod/more-delight)
 - Adds compatibility between [Sortilege](https://modrinth.com/mod/sortilege) and [Deeper and Darker](https://modrinth.com/mod/deeperdarker)
