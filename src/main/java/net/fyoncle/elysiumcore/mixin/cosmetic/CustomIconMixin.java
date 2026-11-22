@@ -12,6 +12,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
+import net.fyoncle.elysiumcore.ElysiumCoreConfig;
 import net.fyoncle.elysiumcore.utility.constants.Textures;
 import net.minecraft.client.util.Icons;
 import net.minecraft.resource.InputSupplier;
@@ -36,6 +37,8 @@ public class CustomIconMixin {
     @Inject(method = "getIcons", at = @At("HEAD"), cancellable = true)
     private void getIcons(ResourcePack resourcePack,
             CallbackInfoReturnable<List<InputSupplier<InputStream>>> cir) {
+        if (!ElysiumCoreConfig.config.cosmetic.doCustomTaskbarIcon)
+            return;
         InputSupplier<InputStream> icon = loadIcon(Textures.APP_ICON);
 
         if (icon != null) {
@@ -46,6 +49,8 @@ public class CustomIconMixin {
     @Inject(method = "getMacIcon", at = @At("HEAD"), cancellable = true)
     private void getMacIcon(ResourcePack resourcePack,
             CallbackInfoReturnable<InputSupplier<InputStream>> cir) {
+        if (!ElysiumCoreConfig.config.cosmetic.doCustomTaskbarIcon)
+            return;
         InputSupplier<InputStream> icon = loadIcon(Textures.APP_ICON_MAC);
 
         if (icon != null) {

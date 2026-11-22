@@ -5,7 +5,7 @@
   "name": "Elysium Core",
   "description": "Core mod for the Elysium Days modpack.",
   "authors": [
-    "§2§lFyoncle§7"
+    "Fyoncle"
   ],
   "contributors": [
     "VipCoder",
@@ -18,7 +18,7 @@
     "sources": "https://github.com/Fyoncle/Elysium-Core",
     "issues": "https://github.com/Fyoncle/Elysium-Core/issues"
   },
-  "license": "ARR",
+  "license": "LGPL-3.0-only",
   "icon": "assets/elysiumcore/icon.png",
   "environment": "*",
   "entrypoints": {

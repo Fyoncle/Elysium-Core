@@ -13,7 +13,7 @@
     "cosmetic.CustomIconMixin",
     "cosmetic.CustomMainMenuLogoMixin",
     "cosmetic.CustomWindowTitleMixin",
-    "cosmetic.CustomMainMenuMixin"
+    "cosmetic.CustomMainMenuButtonsMixin"
   ],
   "injectors": {
     "defaultRequire": 1

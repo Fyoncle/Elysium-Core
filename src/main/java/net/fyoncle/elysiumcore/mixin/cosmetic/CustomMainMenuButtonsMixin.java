@@ -6,6 +6,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+import net.fyoncle.elysiumcore.ElysiumCoreConfig;
 import net.fyoncle.elysiumcore.utility.constants.Constants;
 import net.fyoncle.elysiumcore.utility.constants.Textures;
 import net.minecraft.client.gui.Element;
@@ -21,19 +22,21 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Util;
 
 @Mixin(TitleScreen.class)
-public class CustomMainMenuMixin extends Screen {
+public class CustomMainMenuButtonsMixin extends Screen {
 
     @Unique
     private static final int ELYSIUMCORE$ICON_SIZE = 20;
     @Unique
     private static final int ELYSIUMCORE$ICON_GAP = 4;
 
-    protected CustomMainMenuMixin(Text title) {
+    protected CustomMainMenuButtonsMixin(Text title) {
         super(title);
     }
 
     @Inject(at = @At("RETURN"), method = "init")
     private void elysiumcore$addLinkButtons(CallbackInfo ci) {
+        if (!ElysiumCoreConfig.config.cosmetic.doCustomMainMenuButtons)
+            return;
         ButtonWidget options = this.elysiumcore$findButton("menu.options");
         ButtonWidget quit = this.elysiumcore$findButton("menu.quit");
 

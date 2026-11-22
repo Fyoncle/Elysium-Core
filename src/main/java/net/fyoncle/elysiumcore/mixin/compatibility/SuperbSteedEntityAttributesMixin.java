@@ -10,19 +10,19 @@ import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import com.llamalad7.mixinextras.sugar.Local;
 
 import moriyashiine.superbsteeds.common.component.entity.HorseAttributesComponent;
+import net.fyoncle.elysiumcore.ElysiumCoreConfig;
 import net.minecraft.entity.passive.AbstractHorseEntity;
 
 // Fixing https://github.com/MoriyaShiine/superb-steeds/issues/9
 @Mixin(value = AbstractHorseEntity.class, priority = 1500)
 public class SuperbSteedEntityAttributesMixin {
-    @TargetHandler(
-            mixin = "moriyashiine.superbsteeds.mixin.AbstractHorseEntityMixin",
-            name = "superbsteeds$baseStats"
-    )
+    @TargetHandler(mixin = "moriyashiine.superbsteeds.mixin.AbstractHorseEntityMixin", name = "superbsteeds$baseStats")
     @Definition(id = "horseAttributesComponent", local = @Local(type = HorseAttributesComponent.class))
     @Expression("horseAttributesComponent != null")
     @ModifyExpressionValue(method = "@MixinSquared:Handler", at = @At("MIXINEXTRAS:EXPRESSION"))
     private boolean elysiumcore$forceBaseStats(boolean original) {
+        if (!ElysiumCoreConfig.config.compatibility.superbSteedAttributesFix)
+            return original;
         return true;
     }
 }

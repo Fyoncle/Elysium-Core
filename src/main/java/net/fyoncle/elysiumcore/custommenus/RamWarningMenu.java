@@ -29,12 +29,10 @@ public class RamWarningMenu extends Screen {
     private final String currentRam;
     private MultilineText warningText;
 
-    /** Max heap allocated to the JVM (same value the old Ram class returned). */
     public static float getAllocatedRam() {
         return Runtime.getRuntime().maxMemory() / RAM_DIVISOR;
     }
 
-    /** Uses the current allocated RAM automatically. */
     public RamWarningMenu(Text title) {
         this(title, String.format(Locale.ROOT, "%.1f", getAllocatedRam()));
     }

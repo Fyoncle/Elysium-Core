@@ -6,6 +6,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import fuzs.eternalnether.world.entity.animal.horse.WitherSkeletonHorse;
+import net.fyoncle.elysiumcore.ElysiumCoreConfig;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.mob.SkeletonHorseEntity;
@@ -20,6 +21,9 @@ public class WitherSkeletonHorseModifierMixin extends SkeletonHorseEntity {
 
     @Inject(at = @At("RETURN"), method = "initAttributes")
     public void initAttributes(Random random, CallbackInfo ci) {
+        if (!ElysiumCoreConfig.config.compatibility.witherSkeletonHorseModifier)
+            return;
+
         this.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH).setBaseValue(32.0F);
         this.getAttributeInstance(EntityAttributes.GENERIC_MOVEMENT_SPEED).setBaseValue(0.21);
         this.getAttributeInstance(EntityAttributes.GENERIC_JUMP_STRENGTH).setBaseValue(0.8F);

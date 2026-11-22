@@ -14,6 +14,7 @@ import org.slf4j.LoggerFactory;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.fabric.impl.resource.loader.ModNioResourcePack;
 import net.fabricmc.loader.api.FabricLoader;
+import net.fyoncle.elysiumcore.ElysiumCoreConfig;
 import net.minecraft.resource.ResourcePack;
 import net.minecraft.resource.ResourcePackInfo;
 import net.minecraft.resource.ResourcePackPosition;
@@ -33,6 +34,8 @@ public final class ElysiumCorePackProvider implements ResourcePackProvider {
 
     @Override
     public void register(Consumer<ResourcePackProfile> profileAdder) {
+        if (!ElysiumCoreConfig.config.registerElysiumCorePack)
+            return;
         requireNonNull(profileAdder, "Pack consumer cannot be null");
 
         FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
