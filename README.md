@@ -41,6 +41,7 @@ standalone use.
 - Fixes [Snow! Real Magic!](https://modrinth.com/mod/snow-real-magic)'s issues with some of the tags
 - Fixes [Snow Pig](https://modrinth.com/mod/snowpig-fabric) compatibility with [Fresh Animations: Details](https://modrinth.com/resourcepack/fresh-animations-details)
 - Fixes [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp)'s inconsistencies with textures
+- Fixes [Vanilla Backport](https://modrinth.com/mod/vanillabackport) reverting hay bale textures to vanilla ones even when there is a resourcepack loaded
 - Nerfs [Eternal Nether](https://modrinth.com/mod/eternal-nether)'s Wither Skeleton Horses to work better with [SuperbSteeds](https://modrinth.com/mod/superb-steeds)
 
 </details>
