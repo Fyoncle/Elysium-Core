@@ -21,7 +21,6 @@ Most features can be toggled in the config using [Fzzy Config](https://modrinth.
 - [Fzzy Config](https://modrinth.com/mod/fzzy-config)
 
 ### Optional Dependencies:
-- [Deeper and Darker](https://modrinth.com/mod/deeperdarker)
 - [Dimensional Tears](https://modrinth.com/mod/dimensional-tears)
 - [EMI](https://modrinth.com/mod/emi)
 - [End Remastered](https://modrinth.com/mod/endrem)
@@ -67,7 +66,7 @@ Most features can be toggled in the config using [Fzzy Config](https://modrinth.
 - Adds a warning message for [Dimensional Tears](https://modrinth.com/mod/dimensional-tears)
 - Adds compatibility for [Vanilla Backport](https://modrinth.com/mod/vanillabackport)'s swimming horses feature with Skeleton Horses and [Eternal Nether](https://modrinth.com/mod/eternal-nether)
 - Adds compatibility between [Rustic Delight](https://modrinth.com/mod/rustic-delight) and [More Delight](https://modrinth.com/mod/more-delight)
-- Adds compatibility between [Sortilege](https://modrinth.com/mod/sortilege) and [Deeper and Darker](https://modrinth.com/mod/deeperdarker)
+- Adds compatibility between [Sortilege](https://modrinth.com/mod/sortilege) and [You're in Grave Danger](https://modrinth.com/mod/yigd)
 - Adds 1 secret tip for the [Tips](https://modrinth.com/mod/tips) mod
 - Fixes [Superb Steeds](https://modrinth.com/mod/superb-steeds)'s issue [#9](https://github.com/MoriyaShiine/superb-steeds/issues/9)
 - Fixes [Snow! Real Magic!](https://modrinth.com/mod/snow-real-magic)'s issues with some of their block tags
