@@ -24,7 +24,7 @@ public abstract class ParticleInteractionsFixMixin {
     @Shadow
     protected boolean collidesWithWorld;
     @Shadow
-    private boolean stoppedByCollision;
+    private boolean stopped;
 
     @Unique
     private boolean elysiumcore$hasLanded;
@@ -33,7 +33,7 @@ public abstract class ParticleInteractionsFixMixin {
     private void elysiumcore$adjustYWhenLanded(CallbackInfo ci) {
         if (!ElysiumCoreConfig.config.compatibility.particleInteractionsZFightFix)
             return;
-        if (this.collidesWithWorld && this.stoppedByCollision && !this.elysiumcore$hasLanded) {
+        if (this.collidesWithWorld && this.stopped && !this.elysiumcore$hasLanded) {
             this.elysiumcore$hasLanded = true;
             this.y += ThreadLocalRandom.current().nextDouble(0.0001, 0.0003);
         }

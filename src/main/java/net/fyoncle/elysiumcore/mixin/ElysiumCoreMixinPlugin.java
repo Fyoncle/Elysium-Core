@@ -15,7 +15,8 @@ public final class ElysiumCoreMixinPlugin implements IMixinConfigPlugin {
     private static final Map<String, List<String>> REQUIRED_MODS = Map.of(
             "compatibility.WitherSkeletonHorseModifierMixin", List.of("eternalnether"),
             "compatibility.SuperbSteedEntityAttributesMixin", List.of("superbsteeds"),
-            "compatibility.ParticleInteractionsFixMixin", List.of("eg_particle_interactions"));
+            "compatibility.ParticleInteractionsFixMixin", List.of("eg_particle_interactions"),
+            "cosmetic.HideCapeWithBackpackMixin", List.of("inmis", "trinkets"));
 
     private String mixinPackagePrefix = "";
 

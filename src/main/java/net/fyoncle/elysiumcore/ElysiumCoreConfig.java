@@ -25,6 +25,7 @@ public class ElysiumCoreConfig extends Config {
         public boolean doCustomMainMenuLogo = true;
         public boolean doCustomMainMenuButtons = true;
         public boolean doCustomWindowTitle = true;
+        public boolean hideCapeWithBackpack = true;
     }
 
     public static class Compatibility extends ConfigSection {

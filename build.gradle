@@ -19,6 +19,8 @@ repositories {
     maven { url = "https://repo.spongepowered.org/repository/maven-public/" }
     // Fzzy Maven
     maven { url = "https://maven.fzzyhmstrs.me/" }
+    // Cardinal Components API
+    maven { url = "https://maven.ladysnake.org/releases" }
 }
 
 dependencies {
@@ -31,12 +33,25 @@ dependencies {
     modImplementation "me.fzzyhmstrs:fzzy_config:${project.fzzyConfigVersion}"
 
     // Eternal Nether
-    modCompileOnly "maven.modrinth:eternal-nether:${project.eternalNetherVersion}"
-    modCompileOnly "maven.modrinth:puzzles-lib:${project.puzzlesLibVersion}"
-    modCompileOnly "maven.modrinth:forge-config-api-port:${forgeConfigApiPortVersion}"
+    modCompileOnly "maven.modrinth:s6R4jmL8:${project.eternalNetherVersion}"
+
+    // Puzzles Lib
+    modCompileOnly "maven.modrinth:QAGBst4M:${project.puzzlesLibVersion}"
+
+    // Forge Config API Port
+    modCompileOnly "maven.modrinth:ohNO6lps:${forgeConfigApiPortVersion}"
 
     // Superb Steeds
-    modCompileOnly "maven.modrinth:superb-steeds:${project.superbSteedsVersion}"
+    modCompileOnly "maven.modrinth:UIZkbR3j:${project.superbSteedsVersion}"
+
+    // Trinkets
+    modCompileOnly "maven.modrinth:5aaWibi9:${project.trinketsVersion}"
+
+    // Cardinal Components API
+    modCompileOnly "org.ladysnake.cardinal-components-api:cardinal-components-base:${project.ccaVersion}"
+
+    // Inmis
+    modCompileOnly "maven.modrinth:I0UYcPa0:${project.inmisVersion}"
 
     // Mixin Squared (library)
     include(implementation(annotationProcessor("com.github.bawnorton.mixinsquared:mixinsquared-fabric:0.3.7-beta.1")))

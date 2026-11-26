@@ -10,10 +10,12 @@
   "client": [
     "MixinClientPackSource",
     "ResourcePackPin",
+    "compatibility.ParticleInteractionsFixMixin",
     "cosmetic.CustomIconMixin",
     "cosmetic.CustomMainMenuLogoMixin",
     "cosmetic.CustomWindowTitleMixin",
-    "cosmetic.CustomMainMenuButtonsMixin"
+    "cosmetic.CustomMainMenuButtonsMixin",
+    "cosmetic.HideCapeWithBackpackMixin"
   ],
   "injectors": {
     "defaultRequire": 1

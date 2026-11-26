@@ -38,6 +38,8 @@ Most features can be toggled in the config using [Fzzy Config](https://modrinth.
 - [Tips](https://modrinth.com/mod/tips)
 - [Vanilla Backport](https://modrinth.com/mod/vanillabackport)
 - [Datapatched](https://modrinth.com/mod/datapatched)
+- [Inmis](https://modrinth.com/mod/inmis)
+- [Trinkets](https://modrinth.com/mod/trinkets)
 
 ### Optional Resource Packs:
 - [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp)
@@ -68,6 +70,7 @@ Most features can be toggled in the config using [Fzzy Config](https://modrinth.
 - Adds compatibility between [Rustic Delight](https://modrinth.com/mod/rustic-delight) and [More Delight](https://modrinth.com/mod/more-delight)
 - Adds compatibility between [Sortilege](https://modrinth.com/mod/sortilege) and [You're in Grave Danger](https://modrinth.com/mod/yigd)
 - Adds 1 secret tip for the [Tips](https://modrinth.com/mod/tips) mod
+- Adds a feature where your cape gets hidden if you're wearing an [Inmis](https://modrinth.com/mod/inmis) with [Trinkets](https://modrinth.com/mod/trinkets)
 - Fixes [Superb Steeds](https://modrinth.com/mod/superb-steeds)'s issue [#9](https://github.com/MoriyaShiine/superb-steeds/issues/9)
 - Fixes [Snow! Real Magic!](https://modrinth.com/mod/snow-real-magic)'s issues with some of their block tags
 - Fixes [Snow Pig](https://modrinth.com/mod/snowpig-fabric) compatibility with [Fresh Animations: Details](https://modrinth.com/resourcepack/fresh-animations-details)
