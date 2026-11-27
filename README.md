@@ -27,12 +27,11 @@ Most features can be toggled in the config using [Fzzy Config](https://modrinth.
 - [Eternal Nether](https://modrinth.com/mod/eternal-nether)
 - [Grindy Elytras](https://modrinth.com/mod/grindy-elytras)
 - [Modern World Creation](https://modrinth.com/mod/modern-world-creation)
-- [More Delight](https://modrinth.com/mod/more-delight)
+- [More Delight](https://modrinth.com/mod/more-delight) & [Rustic Delight](https://modrinth.com/mod/rustic-delight)
 - [Particle Interactions](https://modrinth.com/mod/particle-interactions)
-- [Rustic Delight](https://modrinth.com/mod/rustic-delight)
 - [Snow Pig](https://modrinth.com/mod/snowpig-fabric)
 - [Snow! Real Magic!](https://modrinth.com/mod/snow-real-magic)
-- [Sortilege](https://modrinth.com/mod/sortilege)
+- [Sortilege](https://modrinth.com/mod/sortilege) & [You're in Grave Danger](https://modrinth.com/mod/yigd)
 - [Superb Steeds](https://modrinth.com/mod/superb-steeds)
 - [The Lost Castle](https://modrinth.com/mod/the-lost-castle)
 - [Tips](https://modrinth.com/mod/tips)
@@ -45,6 +44,7 @@ Most features can be toggled in the config using [Fzzy Config](https://modrinth.
 ### Optional Resource Packs:
 - [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp)
 - [Fresh Animations: Details](https://modrinth.com/resourcepack/fresh-animations-details)
+- [Better Mob Models](https://modrinth.com/resourcepack/better-mob-models) & [Darkest Ages Mobs + Fresh Animations](https://www.curseforge.com/minecraft/texture-packs/darkest-ages-mobs-fresh-animations/files/all?page=1&pageSize=20&showAlphaFiles=hide)
 
 ***
 
@@ -78,6 +78,7 @@ Most features can be toggled in the config using [Fzzy Config](https://modrinth.
 - Fixes [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp)'s inconsistencies with textures
 - Fixes [Particle Interactions](https://modrinth.com/mod/particle-interactions)' Z-Fighting Fix throwing a `ConcurrentModificationException` when particles tick async
 - Fixes [InmisAddon](https://modrinth.com/mod/inmisaddon)'s issue [#20](https://github.com/Globox1997/InmisAddon/issues/20)
+- Fixes a JEM issue with the Wither Skull when both [Better Mob Models](https://modrinth.com/resourcepack/better-mob-models) and [Darkest Ages Mobs + Fresh Animations](https://www.curseforge.com/minecraft/texture-packs/darkest-ages-mobs-fresh-animations/files/all?page=1&pageSize=20&showAlphaFiles=hide) is used
 - Rebalances [Eternal Nether](https://modrinth.com/mod/eternal-nether)'s Wither Skeleton Horses to work better with [Superb Steeds](https://modrinth.com/mod/superb-steeds)
 
 </details>

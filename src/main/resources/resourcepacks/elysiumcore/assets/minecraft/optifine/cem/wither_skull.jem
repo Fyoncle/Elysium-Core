@@ -1,0 +1,39 @@
+{
+  "models": [
+    {
+      "part": "head",
+      "id": "head",
+      "attach": false,
+      "invertAxis": "xy",
+      "translate": [
+        0.0,
+        -24.0,
+        0.0
+      ],
+      "textureSize": [
+        64,
+        64
+      ],
+      "boxes": [
+        {
+          "textureOffset": [
+            0,
+            35
+          ],
+          "coordinates": [
+            -4.0,
+            24.0,
+            -4.0,
+            8.0,
+            8.0,
+            8.0
+          ]
+        }
+      ]
+    }
+  ],
+  "textureSize": [
+    64,
+    64
+  ]
+}
