@@ -5,6 +5,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyVariable;
 
 import draylar.inmis.client.TrinketBackpackRenderer;
+import net.fyoncle.elysiumcore.ElysiumCoreConfig;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.DyedColorComponent;
 import net.minecraft.item.ItemStack;
@@ -17,6 +18,9 @@ public abstract class InmisAddonLeatherTintMixin {
 
     @ModifyVariable(method = "render", at = @At("HEAD"), argsOnly = true)
     private ItemStack elysiumcore$fixLeatherTint(ItemStack stack) {
+        if (!ElysiumCoreConfig.config.compatibility.inmisAddonFrayedBackpackFix) {
+            return stack;
+        }
         if (!stack.isIn(ItemTags.DYEABLE)) {
             return stack;
         }

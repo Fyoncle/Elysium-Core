@@ -32,6 +32,7 @@ public class ElysiumCoreConfig extends Config {
         public boolean particleInteractionsZFightFix = true;
         public boolean superbSteedAttributesFix = true;
         public boolean witherSkeletonHorseModifier = true;
+        public boolean inmisAddonFrayedBackpackFix = true;
     }
 
     public static void init() {
