@@ -39,6 +39,7 @@ Most features can be toggled in the config using [Fzzy Config](https://modrinth.
 - [Vanilla Backport](https://modrinth.com/mod/vanillabackport)
 - [Datapatched](https://modrinth.com/mod/datapatched)
 - [Inmis](https://modrinth.com/mod/inmis)
+- [InmisAddon](https://modrinth.com/mod/inmisaddon)
 - [Trinkets](https://modrinth.com/mod/trinkets)
 
 ### Optional Resource Packs:
@@ -76,6 +77,7 @@ Most features can be toggled in the config using [Fzzy Config](https://modrinth.
 - Fixes [Snow Pig](https://modrinth.com/mod/snowpig-fabric) compatibility with [Fresh Animations: Details](https://modrinth.com/resourcepack/fresh-animations-details)
 - Fixes [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp)'s inconsistencies with textures
 - Fixes [Particle Interactions](https://modrinth.com/mod/particle-interactions)' Z-Fighting Fix throwing a `ConcurrentModificationException` when particles tick async
+- Fixes [InmisAddon](https://modrinth.com/mod/inmisaddon)'s issue [#20](https://github.com/Globox1997/InmisAddon/issues/20)
 - Rebalances [Eternal Nether](https://modrinth.com/mod/eternal-nether)'s Wither Skeleton Horses to work better with [Superb Steeds](https://modrinth.com/mod/superb-steeds)
 
 </details>

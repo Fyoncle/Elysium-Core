@@ -16,7 +16,8 @@ public final class ElysiumCoreMixinPlugin implements IMixinConfigPlugin {
             "compatibility.WitherSkeletonHorseModifierMixin", List.of("eternalnether"),
             "compatibility.SuperbSteedEntityAttributesMixin", List.of("superbsteeds"),
             "compatibility.ParticleInteractionsFixMixin", List.of("eg_particle_interactions"),
-            "cosmetic.HideCapeWithBackpackMixin", List.of("inmis", "trinkets"));
+            "cosmetic.HideCapeWithBackpackMixin", List.of("inmis", "trinkets"),
+            "compatibility.InmisAddonLeatherTintMixin", List.of("inmis", "trinkets", "inmisaddon"));
 
     private String mixinPackagePrefix = "";
 

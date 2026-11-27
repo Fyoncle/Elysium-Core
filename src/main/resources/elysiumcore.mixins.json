@@ -11,6 +11,7 @@
     "MixinClientPackSource",
     "ResourcePackPin",
     "compatibility.ParticleInteractionsFixMixin",
+    "compatibility.InmisAddonLeatherTintMixin",
     "cosmetic.CustomIconMixin",
     "cosmetic.CustomMainMenuLogoMixin",
     "cosmetic.CustomWindowTitleMixin",
