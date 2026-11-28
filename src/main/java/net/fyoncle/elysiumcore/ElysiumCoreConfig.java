@@ -17,8 +17,9 @@ public class ElysiumCoreConfig extends Config {
         super(Identifier.of(ElysiumCore.MOD_ID, "config"));
     }
 
-    public boolean disableRamWarningScreen = false;
+    public boolean seenRamWarningScreen = false;
     public boolean registerElysiumCorePack = true;
+    public boolean seenWelcomeScreen = false;
 
     public static class Cosmetic extends ConfigSection {
         public boolean doCustomTaskbarIcon = true;

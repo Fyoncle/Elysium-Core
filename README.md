@@ -57,6 +57,7 @@ Most features can be toggled in the config using [Fzzy Config](https://modrinth.
 - Adds a Discord Button on the main menu
 - Adds a Wiki Button on the main menu
 - Adds a RAM Warning Screen
+- Adds a Welcome Screen
 - Adds a New Panorama
 - Adds prettier banners for [Modern World Creation](https://modrinth.com/mod/modern-world-creation)
 
